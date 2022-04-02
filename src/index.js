@@ -3,8 +3,7 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import Home from './components/Home';
-import Projects from './components/Projects';
-import Skills from './components/Skills';
+import Login from './routes/login';
 import {
   BrowserRouter as Router,
   Route,
@@ -20,10 +19,8 @@ ReactDOM.render(
   <Router>
       <Routes>
         <Route exact path="/" element={<Home/>} />
-        <Route path="/skills" element={<Skills/>} />
-        <Route path="/projects" element={<Projects/>} />
         <Route path="/home" element={<Home/>} />
-
+        <Route path="login" element={<Login />} />
       </Routes>
   </Router >,
   document.getElementById('root')
