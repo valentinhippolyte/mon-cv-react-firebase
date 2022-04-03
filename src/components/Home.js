@@ -1,7 +1,10 @@
 import React from 'react'
 import Header from './Header';
 import Projects from './Projects';
-
+import Photo from '../assets/images/avatar.jpg'
+import Facebook from '../assets/images/facebook.png'
+import Linkedin from '../assets/images/linkedin.png'
+import Github from '../assets/images/github.png'
 
 
 const Home = () => (
@@ -13,19 +16,19 @@ const Home = () => (
         <div class="grid grid-cols-1 md:grid-cols-3">
             <div class="grid grid-cols-3 text-center order-last md:order-first mt-20 md:mt-0">
                 <div>
-                    <a href="https://www.linkedin.com/in/valentin-hippolyte-b220751b9/"><img class="hover:-lg font-medium transition transform hover:-translate-y-0.5" src="../assets/images/linkedin.png" href="assets/images/cvF.pdf" alt=""></img></a>
+                    <a href="https://www.linkedin.com/in/valentin-hippolyte-b220751b9/"><img class="hover:-lg font-medium transition transform hover:-translate-y-0.5" src={Linkedin} href="assets/images/cvF.pdf" alt=""></img></a>
                 </div>
                 <div>
-                    <a href="https://www.facebook.com/profile.php?id=100009693605480"><img class="hover:-lg font-medium transition transform hover:-translate-y-0.5" src="./../assets/images/facebook.png" alt=""/></a>
+                    <a href="https://www.facebook.com/profile.php?id=100009693605480"><img class="hover:-lg font-medium transition transform hover:-translate-y-0.5" src={Facebook} alt=""/></a>
                 </div>
                 <div>
-                    <a href="https://github.com/valentinhippolyte"><img class="hover:-lg font-medium transition transform hover:-translate-y-0.5" src="assets/images/github.png" alt=""/></a>
+                    <a href="https://github.com/valentinhippolyte"><img class="hover:-lg font-medium transition transform hover:-translate-y-0.5" src={Github} alt=""/></a>
                 </div>
             </div>
             <div class="relative">
                 <div
                     class="w-48 h-48 mx-auto rounded-full shadow-2xl absolute inset-x-0 top-0 -mt-24 flex items-center justify-center text-indigo-500">
-                    <img  class="h-24 w-24" viewBox="0 0 20 20" fill="currentColor" src="./../assets/images/avatar.jpg" alt=""/>
+                    <img  class="h-24 w-24" viewBox="0 0 20 20" fill="currentColor" src={Photo} alt=""/>
                 </div> 
             </div>
             <div class="space-x-8 flex justify-between mt-32 md:mt-0 md:justify-center"><button

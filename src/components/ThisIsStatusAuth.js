@@ -48,7 +48,7 @@ export function WelcomeTexte(){
     }
     return(
         <p class="text-neutral-50	">
-            Bienvenue {firebase.auth().currentUser.displayName}
+            Bienvenue {firebase.auth().currentUser.displayName} !
         </p>
     )
 
