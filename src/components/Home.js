@@ -16,13 +16,13 @@ const Home = () => (
         <div class="grid grid-cols-1 md:grid-cols-3">
             <div class="grid grid-cols-3 text-center order-last md:order-first mt-20 md:mt-0">
                 <div>
-                    <a href="https://www.linkedin.com/in/valentin-hippolyte-b220751b9/"><img class="hover:-lg font-medium transition transform hover:-translate-y-0.5" src={Linkedin} href="assets/images/cvF.pdf" alt=""></img></a>
+                    <a href="https://www.linkedin.com/in/valentin-hippolyte-b220751b9/" target="_blank" rel="noreferrer"><img class="hover:-lg font-medium transition transform hover:-translate-y-0.5" src={Linkedin} alt=""></img></a>
                 </div>
                 <div>
-                    <a href="https://www.facebook.com/profile.php?id=100009693605480"><img class="hover:-lg font-medium transition transform hover:-translate-y-0.5" src={Facebook} alt=""/></a>
+                    <a href="https://www.facebook.com/profile.php?id=100009693605480" target="_blank" rel="noreferrer"><img class="hover:-lg font-medium transition transform hover:-translate-y-0.5" src={Facebook} alt=""/></a>
                 </div>
                 <div>
-                    <a href="https://github.com/valentinhippolyte"><img class="hover:-lg font-medium transition transform hover:-translate-y-0.5" src={Github} alt=""/></a>
+                    <a href="https://github.com/valentinhippolyte" target="_blank" rel="noreferrer"><img class="hover:-lg font-medium transition transform hover:-translate-y-0.5" src={Github} alt=""/></a>
                 </div>
             </div>
             <div class="relative">

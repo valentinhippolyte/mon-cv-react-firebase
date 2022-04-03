@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
 import firebase from "firebase/compat/app";
 import 'firebase/compat/auth';
 
@@ -13,7 +12,7 @@ export function ThisIsStatusAuth(){
             console.log("is signes in"+isSignedIn);
         })
         return () => myStatusAuth();
-    }, []);
+    }, [isSignedIn]);
 
     if(!isSignedIn){
         return(
@@ -39,7 +38,7 @@ export function WelcomeTexte(){
             console.log("is signes in"+isSignedIn);
         })
         return () => myStatusAuth();
-    }, []);
+    }, [isSignedIn]);
 
      if(!isSignedIn){
         return(

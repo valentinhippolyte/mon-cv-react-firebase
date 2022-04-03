@@ -59,7 +59,7 @@ function Projects(){
                         </p>
                     </div>
                     <div class="px-6 pt-4 pb-2">
-                        <a href={project.lien}><button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+                        <a href={project.lien} target="_blank" rel="noreferrer"><button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
                             voir
                         </button></a>
                     </div>
