@@ -1,6 +1,7 @@
 import { db } from "../firebaseConf";
 import { Component } from "react";
 import { Link } from "react-router-dom";
+import Header from "./Header";
 
 export class AddProject extends Component {
 
@@ -32,6 +33,8 @@ export class AddProject extends Component {
         }
 
           return (
+              <>
+              <Header/>
             <form onSubmit={addMyProject}>
             <div class="bg-indigo-50 min-h-screen md:px-20 pt-6">
                 <div class=" bg-white rounded-md px-6 py-10 max-w-2xl mx-auto">
@@ -55,6 +58,7 @@ export class AddProject extends Component {
                 </div>
             </div>
             </form>
+             </>
           )
     }
 }

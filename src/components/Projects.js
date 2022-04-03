@@ -28,9 +28,10 @@ function Projects(){
     }
 
       return (
+          <>
         <div>
            <div class="flex items-stretch justify-center items-center">
-               <p class="text-4xl ml-1.5">Mes Projets</p>
+               <p class="text-4xl mr-2.5">Mes Projets</p>
                 <div class="justify-around">
                     <div class="flex flex-col">
                         <a href="add-project">
@@ -47,8 +48,8 @@ function Projects(){
                 </div>
             </div>
             
-            
-            <div class="flex flex-wrap">
+            <div class="">
+            <div class="flex flex-wrap divBox justify-center h-screen">
                 {projects.length > 0 ? (
                     projects.map((project) => 
                     <div class="border-2 bg-slate-900 m-10 p-4 rounded-xl w-1/5">
@@ -70,6 +71,8 @@ function Projects(){
                 )}
             </div>
         </div>  
+        </div>
+        </>
       );
 }
 
