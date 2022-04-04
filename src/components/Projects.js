@@ -1,5 +1,7 @@
 import { db } from "../firebaseConf";
-import {useEffect, useState} from "react"
+import {useEffect, useState} from "react";
+import {Link} from 'react-router-dom';
+import AddProject from "./AddProject";
 
 function Projects(){
     const [loading, setLoading] = useState(true);
@@ -34,7 +36,7 @@ function Projects(){
                <p class="text-4xl mr-2.5">Mes Projets</p>
                 <div class="justify-around">
                     <div class="flex flex-col">
-                        <a href="add-project">
+                        <Link to="add-project">
                             <button
                                 class="p-0 w-10 h-10 bg-blue-600 rounded-full hover:bg-blue-700 active:shadow-lg mouse shadow transition ease-in duration-200 focus:outline-none">
                                 <svg viewBox="0 0 20 20" enable-background="new 0 0 20 20" class="w-6 h-6 inline-block">
@@ -43,7 +45,7 @@ function Projects(){
                                         C15.952,9,16,9.447,16,10z" />
                                 </svg>
                             </button>
-                        </a>
+                        </Link>
                     </div>
                 </div>
             </div>

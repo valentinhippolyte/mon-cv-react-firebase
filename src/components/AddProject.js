@@ -2,6 +2,7 @@ import { db } from "../firebaseConf";
 import { Component } from "react";
 import { Link } from "react-router-dom";
 import Header from "./Header";
+import Home from "./Home";
 
 export class AddProject extends Component {
 
